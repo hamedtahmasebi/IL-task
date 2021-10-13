@@ -1,0 +1,40 @@
+@import "./vars&mixins";
+@import "./classes.scss";
+
+#payment-page {
+    animation: fadeInLeft 1s;
+    height: 100vh;
+    @include flex-centered;
+
+    form {
+        @include card;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.5rem;
+        height: fit-content;
+        label {
+            display: flex !important;
+            gap: 3px;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 400;
+            color: #acacac;
+            display: block;
+            margin: 10px 0px;
+        }
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px #e1e1e1 solid;
+            border-radius: 5px;
+            padding: 8px;
+            &:focus {
+                outline: $primary-color 1px solid;
+            }
+            &::placeholder {
+                color: #acacac;
+            }
+        }
+    }
+}

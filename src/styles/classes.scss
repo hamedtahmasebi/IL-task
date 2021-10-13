@@ -18,3 +18,24 @@
         border-bottom: #777777 2px initial;
     }
 }
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.primary-text {
+    color: $primary-color;
+}
+
+.alert {
+    @include flex-centered;
+    padding: 3px;
+    gap: 3px;
+    margin: 5px 0;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: $danger-color;
+    animation: fadeInLeft 400ms;
+}
