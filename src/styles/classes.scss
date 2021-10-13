@@ -1,0 +1,20 @@
+.primary-btn {
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    background-color: $primary-color;
+    padding: 1rem 2rem;
+    border: unset;
+    border-radius: 8px;
+    transition: ease-in-out 100ms;
+    &:hover {
+        background-color: darken($primary-color, $amount: 5);
+        box-shadow: lighten($primary-color, $amount: 12) 0px 0px 10px 0px;
+        cursor: pointer;
+    }
+    &:active {
+        background-color: darken($primary-color, $amount: 10);
+        box-shadow: inset #444444 0px 0px 5px 0px;
+        border-bottom: #777777 2px initial;
+    }
+}

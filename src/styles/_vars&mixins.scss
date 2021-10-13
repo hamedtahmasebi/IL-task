@@ -1,0 +1,26 @@
+$primary-color: #f11f5e;
+$success-color: #4ac718;
+$danger-color: #ffee00;
+$base-color: #e4e4e4;
+
+@mixin breakpoint($point) {
+    @if $point == pc {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    } @else if $point == tablet {
+        @media (min-width: 550px) {
+            @content;
+        }
+    } @else if $point == mobile {
+        @media (max-width: 550px) {
+            @content;
+        }
+    }
+}
+
+@mixin flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

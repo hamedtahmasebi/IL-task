@@ -1,0 +1,18 @@
+@import "vars&mixins";
+@import "classes";
+#main-page {
+    height: 100vh;
+    nav {
+        @include flex-centered;
+        display: flex;
+        gap: 1rem;
+        color: white;
+        background-color: $primary-color;
+        height: 3rem;
+    }
+    div {
+        @include flex-centered;
+        height: 90%;
+        animation: fadeInLeft 1s;
+    }
+}
