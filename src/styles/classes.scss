@@ -28,6 +28,20 @@
 .primary-text {
     color: $primary-color;
 }
+.success-text {
+    color: $success-color;
+}
+
+.success-icon {
+    @include icon;
+    color: $success-color;
+    border-color: $success-color;
+}
+.failure-icon {
+    @include icon;
+    color: $primary-color;
+    border-color: $primary-color;
+}
 
 .alert {
     @include flex-centered;

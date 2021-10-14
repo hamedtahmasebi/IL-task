@@ -40,6 +40,11 @@ $base-color: #e4e4e4;
     }
 }
 
+@mixin icon {
+    font-size: 5em;
+    border: 3px solid;
+    border-radius: 50%;
+}
 @keyframes fadeInLeft {
     0% {
         margin-left: 25%;
